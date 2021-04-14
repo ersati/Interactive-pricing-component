@@ -1,0 +1,31 @@
+.header{
+    margin: 50px 0;
+    text-align: center;
+    position: relative;
+    .header__headline{
+        color:var(--darkBlue);
+    
+    }
+    .header__headline::before{
+        content: url(/images/pattern-circles.svg);
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -40%);
+        z-index: -1;
+    }
+    .header__text {
+        color: var(--greyBlue);
+        white-space: pre
+        ;
+       
+    }
+}
+
+// .header::before{
+//     content: url(/images/pattern-circles.svg);
+//     position: absolute;
+//     color: black;
+//     top: 0;
+//     right: 50%;
+// }

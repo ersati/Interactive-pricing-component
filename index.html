@@ -22,77 +22,45 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-  <div>
-
-    <h2>
-
-      Simple, traffic-based pricing
-    </h2>
-    <p>
-
-      Sign-up for our 30-day trial. No credit card required.
-    </p>
+  <div class="header">
+    <h2 class="header__headline">Simple, traffic-based pricing</h2>
+    <p class="header__text">Sign-up for our 30-day trial. 
+      No credit card required.</p>
   </div>
 
-
-  <div>
-
+<section class="card"></section>
+  <div class="card__top">
     <span>100k</span>
-    <p>
-      Pageviews
-
-    </p>
+    <p>Pageviews</p>
     <input type="range" id="volume" name="volume" min="0" max="11">
     <label for="volume">$<span>0</span> /month</label>
-
-
   </div>
 
-  <div>
-
-    <p>
-
-      Monthly Billing
-    </p>
+  <div class="card__mid">
+    <p>Monthly Billing</p>
     <label class="switch">
       <input type="checkbox" checked>
       <span class="slider round"></span>
     </label>
-    <p>
 
-      Yearly Billing
-    </p>
-    <span>
-
-      25% discount
-    </span>
+    <p>Yearly Billing</p>
+    <span>25% discount</span>
   </div>
 
-  <div>
+  <div class="card__bottom">
     <ul>
-      <li>
-        Unlimited websites
-
-      </li>
-      <li>
-        100% data ownership
-
-      </li>
-      <li>
-        Email reports
-
-      </li>
+      <li>Unlimited websites</li>
+      <li>100% data ownership</li>
+      <li>Email reports</li>
     </ul>
   </div>
 
-  <button>
-    Start my trial
-
-  </button>
+  <button class="card__button">Start my trial</button>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

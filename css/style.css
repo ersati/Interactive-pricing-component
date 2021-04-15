@@ -22,7 +22,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 15px;
-  background-color: var(--veryPaleBlue);
+  background-color: var(--softCyan);
 }
 
 .header {
@@ -47,4 +47,36 @@ body {
 .header .header__text {
   color: var(--greyBlue);
   white-space: pre;
+}
+
+section.card {
+  text-align: center;
+}
+
+section.card div.card__top {
+  color: var(--greyBlue);
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section.card div.card__top .card__top__text {
+  flex-basis: 100%;
+}
+
+section.card div.card__top .card__top__text .card__top__span-text {
+  margin-right: 5px;
+}
+
+section.card div.card__top .card__top__input {
+  flex-basis: 100%;
+}
+
+section.card div.card__top .card__top__label {
+  flex-basis: 80%;
+  justify-content: center;
 }

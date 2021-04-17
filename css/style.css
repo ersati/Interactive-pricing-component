@@ -51,10 +51,10 @@ body {
 
 section.card {
   text-align: center;
+  color: var(--greyBlue);
 }
 
 section.card div.card__top {
-  color: var(--greyBlue);
   background-color: white;
   width: 80%;
   margin: 0 auto;
@@ -117,4 +117,77 @@ section.card div.card__top .card__top__label {
 section.card div.card__top .card__top__label .card__top__label-span {
   font-size: 30px;
   color: var(--darkBlue);
+}
+
+section.card .card__mid {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  /*input toggle slider*/
+  /* end slider button */
+}
+
+section.card .card__mid .card__mid__text {
+  padding: 10px;
+}
+
+section.card .card__mid .card__mid__label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+section.card .card__mid .card__mid__label .card__mid__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+section.card .card__mid .card__mid__label .card__mid__input-span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+section.card .card__mid .card__mid__label .card__mid__input-span:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+section.card .card__mid .card__mid__label .card__mid__input:checked + .card__mid__input-span {
+  background-color: #2196F3;
+}
+
+section.card .card__mid .card__mid__label .card__mid__input:focus + .card__mid__input-span {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+section.card .card__mid .card__mid__label .card__mid__input:checked + .card__mid__input-span:before {
+  transform: translateX(26px);
+}
+
+section.card .card__mid .card__mid__text__span-discount {
+  background-color: var(--lightGrayRed);
+  color: var(--lightRed);
+  padding: 3px 12px;
+  border-radius: 30px;
+  font-size: 10px;
 }

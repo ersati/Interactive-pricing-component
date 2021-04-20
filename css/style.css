@@ -138,8 +138,8 @@ section.card .card__mid .card__mid__text {
 section.card .card__mid .card__mid__label {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 25px;
 }
 
 section.card .card__mid .card__mid__label .card__mid__input {
@@ -163,8 +163,8 @@ section.card .card__mid .card__mid__label .card__mid__input-span {
 section.card .card__mid .card__mid__label .card__mid__input-span:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 18px;
+  width: 18px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -190,4 +190,36 @@ section.card .card__mid .card__mid__text__span-discount {
   padding: 3px 12px;
   border-radius: 30px;
   font-size: 10px;
+}
+
+section.card .card__bottom {
+  background-color: white;
+  border-top: 2px solid transparent;
+  margin: 2px auto 0px auto;
+  width: 80%;
+  padding: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+section.card .card__bottom .card__bottom__list {
+  list-style: none;
+}
+
+section.card .card__bottom .card__bottom__list .card__bottom__item {
+  padding: 5px;
+}
+
+section.card .card__bottom .card__bottom__list .card__bottom__item .card__bottom__img {
+  margin-right: 10px;
+}
+
+section.card .card__bottom .card__bottom__button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 25px;
+  background-color: var(--darkBlue);
+  color: var(--paleBlue);
+  border: none;
 }

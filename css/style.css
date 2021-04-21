@@ -211,8 +211,21 @@ section.card .card__bottom {
   border-bottom-right-radius: 10px;
 }
 
+@media (min-width: 600px) {
+  section.card .card__bottom {
+    display: flex;
+  }
+}
+
 section.card .card__bottom .card__bottom__list {
   list-style: none;
+}
+
+@media (min-width: 600px) {
+  section.card .card__bottom .card__bottom__list {
+    flex-basis: 60%;
+    text-align: left;
+  }
 }
 
 section.card .card__bottom .card__bottom__list .card__bottom__item {
@@ -233,6 +246,13 @@ section.card .card__bottom .card__bottom__button {
   border: none;
   cursor: pointer;
   transition: .3s;
+}
+
+@media (min-width: 600px) {
+  section.card .card__bottom .card__bottom__button {
+    flex-basis: 40%;
+    justify-self: flex-end;
+  }
 }
 
 section.card .card__bottom .card__bottom__button:hover {

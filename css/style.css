@@ -55,6 +55,13 @@ section.card {
   margin-top: 100px;
 }
 
+@media (min-width: 600px) {
+  section.card {
+    width: 600px;
+    margin: 100px auto;
+  }
+}
+
 section.card div.card__top {
   background-color: white;
   width: 80%;
@@ -65,11 +72,26 @@ section.card div.card__top {
   justify-content: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding: 20px;
+  padding: 30px;
+}
+
+@media (min-width: 600px) {
+  section.card div.card__top {
+    display: flex;
+    align-items: center;
+  }
 }
 
 section.card div.card__top .card__top__text {
   flex-basis: 100%;
+}
+
+@media (min-width: 600px) {
+  section.card div.card__top .card__top__text {
+    order: 1;
+    flex-basis: 50%;
+    text-align: left;
+  }
 }
 
 section.card div.card__top .card__top__text .card__top__span-text {
@@ -118,9 +140,22 @@ section.card div.card__top .card__top__input {
   flex-basis: 100%;
 }
 
+@media (min-width: 600px) {
+  section.card div.card__top .card__top__input {
+    order: 3;
+  }
+}
+
 section.card div.card__top .card__top__label {
   flex-basis: 80%;
   justify-content: center;
+}
+
+@media (min-width: 600px) {
+  section.card div.card__top .card__top__label {
+    flex-basis: 50%;
+    order: 2;
+  }
 }
 
 section.card div.card__top .card__top__label .card__top__label-span {
@@ -251,7 +286,6 @@ section.card .card__bottom .card__bottom__button {
 @media (min-width: 600px) {
   section.card .card__bottom .card__bottom__button {
     flex-basis: 40%;
-    justify-self: flex-end;
   }
 }
 

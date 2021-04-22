@@ -236,6 +236,16 @@ section.card .card__mid .card__mid__text__span-discount {
   font-size: 10px;
 }
 
+section.card .card__mid .card__mid__text__span-discount .card__mid__text__span-discount-text {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  section.card .card__mid .card__mid__text__span-discount .card__mid__text__span-discount-text {
+    display: inline-block;
+  }
+}
+
 section.card .card__bottom {
   background-color: white;
   border-top: 2px solid transparent;

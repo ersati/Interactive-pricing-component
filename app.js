@@ -2,22 +2,40 @@ console.log('ok');
 
 const inputRange = document.querySelector('.card__top__input')
 const priceSpan = document.querySelector('.card__top__label-span')
+const inputSwitch = document.querySelector('.card__mid__input');
+const monthOrYear = document.querySelector('.card__top__label__span-text')
+
+const yearly = (inputRange.value * 12)
+const yearlyDiscount = yearly / 4;
+const yearlyWithDiscount = yearly - yearlyDiscount;
+const val = inputRange.value;
+
+inputSwitch.checked ? priceSpan.textContent = yearlyWithDiscount : priceSpan.textContent = val;
+
 
 inputRange.addEventListener('input', () => {
+    const yearly = (inputRange.value * 12)
+    const yearlyDiscount = yearly / 4;
+    const yearlyWithDiscount = yearly - yearlyDiscount;
     const val = inputRange.value
-priceSpan.textContent = `$${val}`;
-console.log(val)
+    if (inputSwitch.checked) {
+        priceSpan.textContent = `$${yearlyWithDiscount}`
+    } else {
+        priceSpan.textContent = `$${val}`
+    }
+
 })
 
-const inputSwitch = document.querySelector('.card__mid__input');
-const monthOrYear = document.querySelector('.card__top__label')
+
 inputSwitch.addEventListener('input', () => {
-     console.log(inputSwitch.checked, monthOrYear.textContent)
+    console.log(inputSwitch.checked, priceSpan)
 
-     if(inputSwitch.checked){
-         monthOrYear.nodeValue = '/year';
+    if (inputSwitch.checked) {
+        priceSpan.textContent = `$${yearlyWithDiscount}`
+        monthOrYear.innerText = '/year';
 
-     } else {
-         monthOrYear.nodeValue = '/month';
-     }
+    } else {
+        priceSpan.textContent = `$${val}`
+        monthOrYear.innerText = '/month';
+    }
 })

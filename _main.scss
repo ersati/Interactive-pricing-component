@@ -193,6 +193,12 @@ section.card {
             padding: 3px 12px;
             border-radius: 30px;
             font-size: 10px;
+            .card__mid__text__span-discount-text{
+                display: none;
+                @media (min-width: 600px){
+                    display: inline-block;
+                }
+            }
         }
     }
     .card__bottom {
